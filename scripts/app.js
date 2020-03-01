@@ -108,13 +108,14 @@ function randomize_button(param){
     draw_maze(param.maze,param.n,param.m);
 }
 
-function solve_wrapper(param){
+async function solve_wrapper(param){
     param.visited = new Array(param.n*param.m);
     for(let i = 0;i<param.m*param.n;i++){
         param.visited[i] = false;
     }
+    param.visited[0] = true;
     draw_maze(param.maze,param.n,param.m);
-    solve(param,0,param.n*param.m-1);
+    await solve(param,0,param.n*param.m-1);
 }
 
 function sleep(ms) {
@@ -122,6 +123,7 @@ function sleep(ms) {
 }  
 
 async function solve(param,v,u){
+    console.log(v);
     var aux = false;
     color_cell(param.maze,param.n,param.m,Math.floor(v/param.m),v%param.m,"yellowgreen");
     if(v==u){
@@ -137,8 +139,8 @@ async function solve(param,v,u){
             }
         }
     }
+    await sleep(20);
     color_cell(param.maze,param.n,param.m,Math.floor(v/param.m),v%param.m,"red");
-    await sleep(10);
 }
 
 (function(){
