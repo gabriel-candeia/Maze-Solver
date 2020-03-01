@@ -7,18 +7,21 @@ body{
     text-align: center
 }
 
+input{
+    font-family: 'Spartan';
+}
+
 #app-container{
     margin: auto;
     width: 450px;
     height: 490px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgb(180, 178, 178);
+    border: 1px solid black;
 }
 
 #options-bar{
     height: 40px;
     line-height: 40px;
-}
-
-#canvas{
+    border-bottom: 1px solid black;
 }
