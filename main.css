@@ -4,7 +4,8 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Spartan';
-    text-align: center
+    text-align: center;
+    user-select: none;
 }
 
 input{
@@ -15,7 +16,7 @@ input{
     margin: auto;
     width: 450px;
     height: 490px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 10px;
     box-shadow: 0px 2px 10px rgb(180, 178, 178);
     border: 1px solid black;
 }
