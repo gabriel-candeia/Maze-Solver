@@ -1,7 +1,7 @@
 # Maze Solver
 ## Description
 ![](showcase.png)
-A simple maze solver/generator I did to improve my javascript and to play with some graphs.
+A simple maze solver/generator I did to improve my javascript and to play with some graphs. Check the project running at https://gabriel-candeia.github.io/Maze-Solver/.
 
 ## How are mazes born?
 ![](maze_generation.png)
